@@ -9,12 +9,14 @@
 ## 🚀 Quick Start (3 Minutes)
 
 ### Prerequisites
+
 - **Claude Code CLI** installed and authenticated
 - **Claude subscription** - required for intensive agent workflows
 - Active project directory with your codebase
 - **Optional**: [Context7 MCP](docs/dependencies.md) for enhanced documentation access
 
 ### 1. Install the Agents
+
 ```bash
 git clone https://github.com/vijaythecoder/awesome-claude-agents.git
 ```
@@ -22,6 +24,7 @@ git clone https://github.com/vijaythecoder/awesome-claude-agents.git
 #### Option A: Symlink (Recommended - auto-updates)
 
 **macOS/Linux:**
+
 ```bash
 # Create agents directory if it doesn't exist (preserves existing agents)
 mkdir -p ~/.claude/agents
@@ -31,6 +34,7 @@ ln -sf "$(pwd)/awesome-claude-agents/agents/" ~/.claude/agents/awesome-claude-ag
 ```
 
 **Windows (PowerShell):**
+
 ```powershell
 # Create agents directory
 New-Item -Path "$env:USERPROFILE\.claude\agents" -ItemType Directory -Force
@@ -40,6 +44,7 @@ cmd /c mklink /D "$env:USERPROFILE\.claude\agents\awesome-claude-agents" "$(Get-
 ```
 
 #### Option B: Copy (Static - no auto-updates)
+
 ```bash
 # Create agents directory if it doesn't exist
 mkdir -p ~/.claude/agents
@@ -49,12 +54,14 @@ cp -r awesome-claude-agents/agents ~/.claude/agents/awesome-claude-agents
 ```
 
 ### 2. Verify Installation
+
 ```bash
 claude /agents
 # Should show all 24 agents.
 ```
 
 ### 3. Initialize Your Project
+
 **Navigate** to your **project directory** and run the following command to configure your AI team:
 
 ```bash
@@ -62,6 +69,7 @@ claude "use @agent-team-configurator and optimize my project to best use the ava
 ```
 
 ### 4. Start Building
+
 ```bash
 claude "use @agent-tech-lead-orchestrator and build a user authentication system"
 ```
@@ -79,15 +87,16 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 5. **Updates CLAUDE.md** - Creates a timestamped "AI Team Configuration" section with your detected stack and a Task|Agent|Notes mapping table
 6. **Provides Usage Guidance** - Shows you the detected stack, selected agents, and gives sample commands to start building
 
-
 ## 👥 Meet Your AI Development Team
 
 ### 🎭 Orchestrators (3 agents)
+
 - **[Tech Lead Orchestrator](agents/orchestrators/tech-lead-orchestrator.md)** - Senior technical lead who analyzes complex projects and coordinates multi-step development tasks
 - **[Project Analyst](agents/orchestrators/project-analyst.md)** - Technology stack detection specialist who enables intelligent agent routing
 - **[Team Configurator](agents/orchestrators/team-configurator.md)** - AI team setup expert who detects your stack and configures optimal agent mappings
 
 ### 💼 Framework Specialists (13 agents)
+
 - **Laravel (2 agents)**
   - **[Backend Expert](agents/specialized/laravel/laravel-backend-expert.md)** - Comprehensive Laravel development with MVC, services, and Eloquent patterns
   - **[Eloquent Expert](agents/specialized/laravel/laravel-eloquent-expert.md)** - Advanced ORM optimization, complex queries, and database performance
@@ -108,12 +117,14 @@ The @agent-team-configurator automatically sets up your perfect AI development t
   - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state architecture
 
 ### 🌐 Universal Experts (4 agents)
+
 - **[Backend Developer](agents/universal/backend-developer.md)** - Polyglot backend development across multiple languages and frameworks
 - **[Frontend Developer](agents/universal/frontend-developer.md)** - Modern web technologies and responsive design for any framework
 - **[API Architect](agents/universal/api-architect.md)** - RESTful design, GraphQL, and framework-agnostic API architecture
 - **[Tailwind Frontend Expert](agents/universal/tailwind-css-expert.md)** - Tailwind CSS styling, utility-first development, and responsive components
 
 ### 🔧 Core Team (4 agents)
+
 - **[Code Archaeologist](agents/core/code-archaeologist.md)** - Explores, documents, and analyzes unfamiliar or legacy codebases
 - **[Code Reviewer](agents/core/code-reviewer.md)** - Rigorous security-aware reviews with severity-tagged reports
 - **[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
@@ -122,7 +133,6 @@ The @agent-team-configurator automatically sets up your perfect AI development t
 **Total: 24 specialized agents** working together to build your projects!
 
 [Browse all agents →](agents/)
-
 
 ## 🔥 Why Teams Beat Solo AI
 
